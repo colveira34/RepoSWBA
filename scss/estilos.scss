@@ -1,0 +1,306 @@
+/***Primer bloque BEM del desafio complementario 11***/
+.container{
+    .ajustarHeader{
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: "area1 area2";   
+    }
+
+    &__Img{
+        grid-area: area1;
+        align-self: flex-start;
+        justify-self: flex-start; 
+    }
+
+    &__H1{
+        grid-area: area2;
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+}
+
+/***Segundo bloque BEM del desafio complementario 11***/
+.navegador{
+    .navegador__Lista{
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            height: 80%;
+            list-style: none;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.788);
+        }    
+        &__H2{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif; 
+     }
+}
+
+/***Tercer bloque BEM del desafio complementario 11***/
+.contenidoMain{
+    .centradoDelMain{
+            transform: translateX(15%);
+    } 
+     
+    &__h3{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 50px;
+        font-weight: bold;
+    } 
+} 
+
+/***Cuarto bloque BEM del desafio complementario 11***/
+ .centrarMain2{
+     .cajaDeTexto{
+        height:40%;
+        width: 60%;
+     }
+     &__P{
+         font-family: Arial, Helvetica, sans-serif;
+         color: rgb(105, 33, 33);
+     }
+ }
+/*****Fin Bloques BEM correspondiente al desafio complementario 11***/
+.ajustarNav{
+    margin-left: 15%;
+    font-size: 2.5rem;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: brown;
+}
+
+.mover{
+    margin-top: 50px;
+}
+
+.moverModal{
+    margin-left: 20%;
+ }
+
+ .cajaPadreMenu{
+    display: flex;
+    height: 80px;
+    width: 80%;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.788);
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.ajustarLinks{
+    text-decoration: none;
+}
+.centrarTablaPadre{
+    display: flex;
+    height: 200px;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+ 
+ }
+
+ th, td{
+    border: 2px solid darkred;
+    color:#b30000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+ 
+
+ td{
+    color: #3333ff;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+.centrarMain2{
+    transform: translateX(42px); 
+   
+}
+
+h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+ 
+.cajaTexto{
+    height:40%;
+    width: 70%;
+    color:#663500;
+    font-size: 16px;     
+    font-family: 'Montserrat', sans-serif;
+ }
+
+/**Aplico Media Queries***/
+@media only screen and (min-width: 360px){
+    .cajaPadreMenu{
+        display: flex;
+        height: 60%;
+        width: 50%;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.788);
+        text-decoration: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        
+    }
+    .ajustarVideo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr;
+        grid-template-areas: "area1";
+        margin-left: 3%; 
+    }
+ }
+
+ @media only screen and (min-width: 768px){
+    .cajaPadreMenu{
+        display: flex;
+        height: 40%;
+        width: 80%;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.788);
+        text-decoration: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;       
+    }
+    .ajustarVideo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr;
+        grid-template-areas: "area1";
+        padding-left: 15%;  
+    }
+ }
+
+ .colorForm{
+    color:darkblue;
+ }
+ #fieldsetForm{
+    width: 20%;
+ }
+ #aplicarArial{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ h1{
+     color:black;
+     font-family: arial;
+ }
+
+ 
+.cajaProximosEventos{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+
+    &__p{
+        color: rgb(104, 39, 39);
+    }
+    a{
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+    }
+}
+
+/***Aplico 1 ejemplo de Mixin correspondiente al desafio complementario 12***/
+@mixin creoFooter($tamanioFilas, $tamanioColumnas){
+    display: grid;
+    grid-template-columns:$tamanioColumnas;
+    grid-template-rows: $tamanioFilas;
+    grid-template-areas: "area1"
+                         "area2"
+                         "area3"
+                         "area4";
+    width: 40%;
+    justify-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.gridFooter{
+    @include creoFooter(1fr, 1fr);
+
+    h2{
+        grid-area: area1;
+    }
+    &__H31{
+        grid-area: area2;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: brown;
+    }
+    &__H32{
+        grid-area: area3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: brown;
+    }
+    &__H33{
+        grid-area: area4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: brown;
+    }
+}
+
+/***Aplico 1 ejemplo de extend correspondiente al desafio 12 complementario***/
+/**Reutilizo el footer de la seccion acercaDe para replicar el mismo en la seccion proximosEventos***/
+
+.footerProximosEventos{
+    @extend .gridFooter;
+    @extend .gridFooter__H31;
+    @extend .gridFooter__H32;
+    @extend .gridFooter__H33;
+
+    h2{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    color: white;
+    background-color: black;
+    transform: translateX(200px);
+}
+
+/**Ajusto el ancho de la tabla en la seccion acercaDe***/
+.anchoTabla{
+    width: 60%;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+.agregoBordeDerecho{
+    border-right: 1px solid darkred;
+}
+
+.quitoBordeInferior{
+    border-bottom: none;
+}
+
+/**Ajusto ubicación del nombre de StartupWeekend en la tabla**/
+.ajustoUbicacion{
+    transform: translateY(20px);
+}
+
+.moverFooter{
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+.anchoFooter{
+    width: 60%;
+}
