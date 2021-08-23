@@ -241,3 +241,9 @@ h1 {
 
 .fondoGrade {
   background-image: linear-gradient(to top, grey, black); }
+
+.fondoGradeParaTexto {
+  background-image: linear-gradient(to left, black, grey);
+  width: 75%;
+  height: auto;
+  margin-left: 2%; }
