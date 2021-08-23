@@ -2,29 +2,33 @@
 /***Primer bloque BEM del desafio complementario 11***/
 .container .ajustarHeader {
   display: grid;
-  grid-template-columns: 5fr 4fr;
+  grid-template-columns: 4fr 4fr;
   grid-template-rows: 2fr;
-  grid-template-areas: "area1 area2"; }
+  grid-template-areas: "area1 area2";
+  justify-content: center; }
+
+.container__fondo {
+  background-color: rgba(100, 95, 95, 0.315); }
 
 .container__Img {
   grid-area: area1;
   align-self: flex-start;
-  justify-self: flex-start; }
+  justify-self: center; }
 
 .container__H1 {
   grid-area: area2;
   align-self: center;
+  padding-left: 18%;
   font-family: Arial, Helvetica, sans-serif; }
 
 /***Segundo bloque BEM del desafio complementario 11***/
 .navegador .navegador__Lista {
   display: flex;
-  justify-content: space-evenly;
-  width: 80%;
+  justify-content: space-around;
+  width: 85%;
   height: 80%;
   list-style: none;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.788); }
+  text-decoration: none; }
 
 .navegador__H2 {
   color: white;
@@ -50,8 +54,8 @@
 
 /*****Fin Bloques BEM correspondiente al desafio complementario 11***/
 .ajustarNav {
-  margin-left: 15%;
-  font-size: 2.5rem; }
+  margin-left: 10%;
+  width: 80%; }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -59,7 +63,7 @@ p {
   color: brown; }
 
 .mover {
-  margin-top: 50px; }
+  margin-top: 25px; }
 
 .moverModal {
   margin-left: 20%; }
@@ -234,3 +238,6 @@ h1 {
 
 .anchoFooter {
   width: 60%; }
+
+.fondoGrade {
+  background-image: linear-gradient(to top, grey, black); }
