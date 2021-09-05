@@ -50,8 +50,48 @@
 
 .footerHome {
   display: Flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
 
-.imgIG {
-  width: 32px;
-  height: 32px; }
+/* @media only screen and(max-width: 350px){
+    .footerHome{
+        display: Flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+   }
+
+   @media only screen and(min-width: 350px){
+    .footerHome{
+        display: Flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+   }
+
+   @media only screen and(max-width: 576px){
+    .footerHome{
+        display: Flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+   }
+
+   @media only screen and(min-width: 576px){
+    .footerHome{
+        display: Flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+   }*/
+.mailContacto {
+  margin-left: 5%; }
+
+.moverFooter {
+  margin-left: 48rem; }
