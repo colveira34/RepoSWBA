@@ -53,7 +53,7 @@
         text-decoration:none;
         color:white;
        }
-   }
+    }
 
    @media only screen and(max-width: 992px){
     .menuNavegacionMobileFirst{
@@ -62,6 +62,16 @@
         justify-content: space-evenly;
         height: 20%;
     }
+   }
+
+   @media only screen and(max-width: 1200px){
+    .menuNavegacionMobileFirst{
+        display: Flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20%;
+    }
+
    }
    
    .colorNav{
@@ -76,27 +86,7 @@
     width: 100%;
     }
 
-
-  /* @media only screen and(max-width: 350px){
-    .footerHome{
-        display: Flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
-    
-   }
-
    @media only screen and(min-width: 350px){
-    .footerHome{
-        display: Flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-   }
-
-   @media only screen and(max-width: 576px){
     .footerHome{
         display: Flex;
         flex-direction: row;
@@ -112,15 +102,46 @@
         justify-content: center;
         width: 100%;
     }
-   }*/
-   
-   .mailContacto{
-      margin-left: 5%;
    }
 
-   .moverFooter{
-       margin-left: 48rem;
+   .moverFooter{ 
+       text-align: center;
    }
  
- 
+  body{
+      background-color: black;
+  }
    
+  .colorMain1{
+      color: white;
+  }
+
+  p{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .Mover{
+    margin-top: 15px;
+  }
+
+  /*************APLICO ESTILOS A LA SEGUNDA SECCION SOBRE STARTUP WEEKEND******************/
+
+  .bodySegundoSection{
+      background-color: black;
+  }
+
+  /************APLICO ESTILOS A LA TERCER SECCION EVENTOS DE STARTUP WEEKEND************/
+  .bodyTercerSection{
+    background-color: black;
+  }
+
+  .textoTercerSection{
+      @extend .colorMain1;
+      &__centrarTexto{
+        text-align: center;
+      }
+  }
+
+ 
+    
+  

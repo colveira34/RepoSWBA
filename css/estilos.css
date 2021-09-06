@@ -44,6 +44,13 @@
     justify-content: space-evenly;
     height: 20%; } }
 
+@media only screen and (max-width: 1200px) {
+  .menuNavegacionMobileFirst {
+    display: Flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%; } }
+
 .colorNav {
   background-image: linear-gradient(to top, black, grey);
   margin-top: 0.5%; }
@@ -54,44 +61,42 @@
   justify-content: center;
   width: 100%; }
 
-/* @media only screen and(max-width: 350px){
-    .footerHome{
-        display: Flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
-    
-   }
+@media only screen and (min-width: 350px) {
+  .footerHome {
+    display: Flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; } }
 
-   @media only screen and(min-width: 350px){
-    .footerHome{
-        display: Flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-   }
-
-   @media only screen and(max-width: 576px){
-    .footerHome{
-        display: Flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-   }
-
-   @media only screen and(min-width: 576px){
-    .footerHome{
-        display: Flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-   }*/
-.mailContacto {
-  margin-left: 5%; }
+@media only screen and (min-width: 576px) {
+  .footerHome {
+    display: Flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; } }
 
 .moverFooter {
-  margin-left: 48rem; }
+  text-align: center; }
+
+body {
+  background-color: black; }
+
+.colorMain1, .textoTercerSection {
+  color: white; }
+
+p {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.Mover {
+  margin-top: 15px; }
+
+/*************APLICO ESTILOS A LA SEGUNDA SECCION SOBRE STARTUP WEEKEND******************/
+.bodySegundoSection {
+  background-color: black; }
+
+/************APLICO ESTILOS A LA TERCER SECCION EVENTOS DE STARTUP WEEKEND************/
+.bodyTercerSection {
+  background-color: black; }
+
+.textoTercerSection__centrarTexto {
+  text-align: center; }

@@ -3,104 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="Description" content="Startup Weekend es básicamente una hackaton, lo mas importante
     del evento es lo que se aprende">
     <title>Sobre Startup Weekend</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
+<body class="bodySegundoSection">
     <header>
-        <div class="container">
-            <div class="row ajustarHeader">
-                  <img class="col-8 container__Img" src="../images/logoStartupWeekend.JPG" class="img-fluid"alt="">
-                  <h1 class="col container__H1" >Startup Weekend</h1>
-            </div>
+        <div class="headerImg">
+            <img class="centrarImg" src="../images/logoStartupWeekend.JPEG" alt="Logo Startup Weekend Buenos Aires"> 
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navegador ajustarNav">
-        <ul class="navbar-nav navegador__Lista">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="acercaDe.html"><h2 class="navegador__H2">Acerca de nosotros</h2></a>
+   <!--Creo el nav en este punto-->  
+      <nav>
+         <ul class="menuNavegacion menuNavegacionMobileFirst colorNav">
+           <li>
+               <a href="../index.html">HOME</a>
+           </li>
+           
+           <li>
+               <a href="acercaDe.html">
+                SOBRE STARTUP WEEKEND
+               </a>
+           </li>
+           <li>
+              <a href="proximosEventos.html">
+                EVENTOS DE STARTUP WEEKEND
+              </a>
+           </li>
+            <li>
+               <a href="edicionesRealizadas.html">
+               EDICIONES REALIZADAS
+               </a>
             </li>
-            <li class="nav-item">
-               <a class="nav-link" href="edicionesRealizadas.html"><h2 class="navegador__H2">Ediciones Realizadas</h2></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="proximosEventos.html"><h2 class="navegador__H2">Proximos eventos</h2></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="sumateAlEquipo.html"><h2 class="navegador__H2">Sumate al Equipo</h2></a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="../index.html"><h2 class="navegador__H2">Home</h2></a>
-             </li>      
-        </ul>
-    </nav>
-
-    <br>
-    <br>
-
-    <div class="anchoTabla">
-        <table class="table">
-            <thead>
-            <tr>
-                <th class="agregoBordeDerecho" scope="col">Nombre</th>
-                <th class="agregoBordeDerecho"scope="col">Información Tecnica</th>
-                <th scope="col">Caracteristicas</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="agregoBordeDerecho quitoBordeInferior ajustoUbicacion">Startup Weekend</td>
-                <td class="agregoBordeDerecho quitoBordeInferior">
-                    <ol>
-                        <li>Es un evento tecnológico</li>
-                        <li>Convoca Diseñadores</li>
-                        <li>Convoca Desarrolladores</li>
-                        <li>Convoca especialistas en negocios</li>
-                    </ol>
-                </td>
-
-                <td class="quitoBordeInferior">
-                    <ol>
-                        <li>Es un evento que no distingue género</li>
-                        <li>Hasta el que no tiene una idea puede participar</li>
-                        <li>Es el punto de partida para crear tu startup</li>
-                        <li>Aun que no ganes, te vas a llevar mucho conocimiento</li>
-                    </ol>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <main class="contenidoMain">  
-        <div class="container-fluid centradoDelMain">
-            <h3 class="contenidoMain__h3">¿Que es Startup Weekend?</h3>
-            <div class="row">
-                <iframe class="col-7" width="700" height="500" src="https://www.youtube.com/embed/uPOTPPvf5hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+              <li>
+                  <a href="sumateAlEquipo.html">
+                    SUMATE AL EQUIPO
+                  </a>
+              </li>
+         </ul>
+      </nav>
+    <main>  
+        <div class="container">
+            <div class = "row colorMain1">
+              <p class="h5 moverFooter">
+                  ¿Que es Startup Weekend?
+              </p>
+              <div class="row">
+                <iframe class="col-12" width="700" height="500" src="https://www.youtube.com/embed/uPOTPPvf5hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
-            </div>
-        </div>       
-    </main>
-    <!--Agrego el footer-->
-    <div class="moverFooter">
-        <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
-            <div class="card-header">
-                <h2>Datos de Contacto:</h2>
-            </div>
-            <div class="card-body">
-            <h6>Mail: buenosairesai@startupweekend.org</h6>
-            <h6>Facebook: @swbuenosaires</h6>
-            <h6>Instagram: @startupweekendba</h6> 
+              </div>
             </div>
         </div>
-    </div>
+        
+        <div class = "container Mover">
+            <div class = "row colorMain1">
+                <p class="col-9 colorMain1">
+                    Startup Weekend es un programa de tres días en el que los aspirantes a emprendedores pueden experimentar la vida de 
+                    las startups en cientos de ciudades de todo el mundo.
+                </p>       
+            </div>
+            <div class="colorMain1">
+                <h2>Conecta con otros creadores</h2>
+                <p>Conecta con otras personas apasionadas impulsadas por construir algo nuevo. La pasión es un elemento básico de Techstars. No hay mejor lugar para conocer nuevos amigos,
+                   colegas, mentores o cofundadores e inversores.</p>
+            </div>
+
+            <div class="colorMain1">
+                <h2>Aprende de los mejores</h2>
+                <p>
+                   Descubri lo que realmente se necesita para innovar y poner en marcha una Startup aprendiendo de personas que ya han transitado ese camino (fundadores, inversores, co
+                   fundadores, etc).
+                </p>
+            </div>
+
+            <div class="colorMain1">
+                <h2>Comienza algo grandioso</h2>
+                <p>
+                    Techstars Startup Weekend esta diseñado para que pongas en marcha tu idea rapido. El equipo organizador preparara el entorno idea para que puedas tener exito y aprender lo mas
+                    posible en 54 horas.
+                </p>
+            </div>
+        </div>
+    </main>
+     <!--Armo el footer-->
+    <footer>  
+        <h1 class="footerHome colorMain1 Mover">Nuestras redes:</h1>
+           <span class="footerHome">
+               <a href="https://www.facebook.com/pg/swbuenosaires/community/">
+                 <img alt="Facebook Startup Weekend" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png"/>
+               </a>
+               <h5 class="colorMain1">Facebook: @swbuenosaires</h5>
+           </span> 
+           
+           <span  class="footerHome">
+             <a href="https://www.instagram.com/startupweekendba/">
+               <img src="../images/iconoIG.png" alt="Instagram de Startup Weekend">
+             </a>
+             <h5 class="colorMain1">Instagram: @startupweekendba</h5>
+           </span>
+    </footer>
+      <footer>
+       <h2 class="moverFooter colorMain1">Mail de Contacto</h2>  
+       <p class="h5 moverFooter colorMain1">
+          buenosairesecommerce@startupweekend.org
+       </p>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,45 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="Description" content="Próximos eventos de Startup Weekend">
     <title>Eventos de Startup Weekend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-      <!--MENU DE NAVEGACION-->
-      <nav>
-        <ul class="cajaPadreMenu">
-            <li><a class="ajustarLinks" href="acercaDe.html"><h2 class="navegador__H2">Acerca de Nosotros</h2></a></li>
-            <li><a class="ajustarLinks" href="edicionesRealizadas.html"><h2 class="navegador__H2">Ediciones Realizadas</h2></a></li>         
-            <li><a class="ajustarLinks" href="proximosEventos.html"><h2 class="navegador__H2">Proximos Eventos</h2></a></li>
-            <li><a class="ajustarLinks" href="sumateAlEquipo.html"><h2 class="navegador__H2">Sumate al Equipo</h2></a></li>
-            <li><a class="ajustarLinks" href="../index.html"><h2 class="navegador__H2">Home</h2></a></li>
-        </ul>
-      </nav>
-      <main class="centrarMain2">
-          <div class="ajustarVideo">
-              <iframe width="60%" height="500" src="https://www.youtube.com/embed/6Ps75PrueIk" title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-          </div>
+<body class="bodyTercerSection">
+  <header>
+    <div class="headerImg">
+        <img class="centrarImg" src="../images/logoStartupWeekend.JPEG" alt="Logo Startup Weekend Buenos Aires"> 
+    </div>
+  </header>
+<!--Creo el nav en este punto-->  
+  <nav>
+     <ul class="menuNavegacion menuNavegacionMobileFirst colorNav">
+       <li>
+           <a href="../index.html">HOME</a>
+       </li>
+       
+       <li>
+           <a href="acercaDe.html">
+            SOBRE STARTUP WEEKEND
+           </a>
+       </li>
+       <li>
+          <a href="proximosEventos.html">
+            EVENTOS DE STARTUP WEEKEND
+          </a>
+       </li>
+        <li>
+           <a href="edicionesRealizadas.html">
+           EDICIONES REALIZADAS
+           </a>
+        </li>
+          <li>
+              <a href="sumateAlEquipo.html">
+                SUMATE AL EQUIPO
+              </a>
+          </li>
+     </ul>
+  </nav>
 
-          <div class="cajaProximosEventos">
-            <p class="cajaProximosEventos__p">¿Tenes ganas de adquirir nuevas herramientas para tu emprendimiento? estate atento a nuestras redes.</p>
-          </div>
+  <main>
+    <div class="container">
+      <div class = "row">
+        <p class="h5  textoTercerSection__centrarTexto textoTercerSection">
+          ¿Tenes ganas de adquirir nuevas herramientas para tu emprendimiento? estate atento a nuestras redes.
+        </p>
+        <div class="row">
+          <iframe width="700" height="500" src="https://www.youtube.com/embed/6Ps75PrueIk" title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+  </div>
 
-          <div class="cajaProximosEventos">
-            <div>
-              <p class="cajaProximosEventos__p">En el siguiente link vas a poder conocer otras ediciones de Startup Weekend que se realizan alrededor del mundo:</p>
-            </div>
-            <a href="https://www.techstars.com/events#search_events=Startup%20Weekend ">Busqueda de eventos de SW</a>
-          </div>
-      </main>
+  </main>
+      
+   
 
-      <footer class="footerProximosEventos">
-        <h2>Datos de Contacto:</h2>
-        <h3>Mail: buenosairesai@startupweekend.org</h3>
-        <h3>Facebook:@swbuenosaires</h3>
-        <h3>Instagram: @startupweekendba</h3>
-      </footer>   
+    <!--Agrego el Footer en este punto-->
+    <footer>  
+      <h1 class="footerHome colorMain1 Mover">Nuestras redes:</h1>
+         <span class="footerHome">
+             <a href="https://www.facebook.com/pg/swbuenosaires/community/">
+               <img alt="Facebook Startup Weekend" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png"/>
+             </a>
+             <h5 class="colorMain1">Facebook: @swbuenosaires</h5>
+         </span> 
+         
+         <span  class="footerHome">
+           <a href="https://www.instagram.com/startupweekendba/">
+             <img src="../images/iconoIG.png" alt="Instagram de Startup Weekend">
+           </a>
+           <h5 class="colorMain1">Instagram: @startupweekendba</h5>
+         </span>
+    </footer>
+    <footer>
+     <h2 class="moverFooter colorMain1">Mail de Contacto</h2>  
+     <p class="h5 moverFooter colorMain1">
+        buenosairesecommerce@startupweekend.org
+     </p>
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
