@@ -3,93 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="Description" content="Fortalezcamos juntos el ecosistema emprendedor">
     <title>Mas sobre SW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    
-    <!--MENU DE NAVEGACION-->
-    <nav>
-        <ul class="cajaPadreMenu">
-            <li><a class="ajustarLinks" href="acercaDe.html"><h2 class="navegador__H2">Acerca de Nosotros</h2></a></li>
-            <li><a class="ajustarLinks" href="edicionesRealizadas.html"><h2 class="navegador__H2">Ediciones Realizadas</h2></a></li>         
-            <li><a class="ajustarLinks" href="proximosEventos.html"><h2 class="navegador__H2">Proximos Eventos</h2></a></li>
-            <li><a class="ajustarLinks" href="sumateAlEquipo.html"><h2 class="navegador__H2">Sumate al Equipo</h2></a></li>
-            <li><a class="ajustarLinks" href="../index.html"><h2 class="navegador__H2">Home</h2></a></li>
-        </ul>
-    </nav>
-
-    <main class="centrarMain2">
-        <H2>Cambiemos el mundo juntos</H2>
-        <img width="900;" height="400px;" src="../images/fotoEventoRealizado.jpg" alt="impactoPositivo">
-
-        <!--<p id="sumateAlEquipo">-->
-         <div class="cajaDeTexto">
-            <p class="centrarMain2__P">
-               ¿Te gusta cambiar la realidad de la gente? ¿Te apasiona el mundo del emprendimiento? si la respuesta es si a ambas
-               preguntas, entonces, te invitamos a sumarte al equipo de Startup Weekend para comenzar.  
-               Te invitamos a que nos dejes tus datos para que podamos contarte mas información sobre la organización.
-            </p>
+    <header>
+        <div class="headerImg">
+            <img class="centrarImg" src="../images/logoStartupWeekend.JPEG" alt="Logo Startup Weekend Buenos Aires"> 
         </div>
-    </main>
-   
-    <!--Linkeo la pagina HTTP404 al botón de enviar de este formulario-->
-   <H1 class="centrarMain2">SUMATE AL EQUIPO</H1>
-    <form action="../ErrorHTTP404.HTML" class="centrarMain2">
-        <fieldset class="colorForm" id="fieldsetForm">  
-            <legend id="aplicarArial">Dejanos tus datos</legend>             
-             <label for="nombre" id="aplicarArial">Nombre:</label>
-             <br>
-                <input type="text" placeholder="Ingrese Nombre" id="nombre">
-             <br>
-             <br>
-             <label for="apellido" id="aplicarArial">Apellido:</label>
-             <br>
-                <input type="text" placeholder="Ingrese Apellido" id="apellido">
-             <br>
-             <br>
-             <label for="edad" id="aplicarArial">Edad:</label>
-             <br>
-             <input type="number" placeholder="Ingrese Edad" id="edad">
-             <br>
-             <br>
-           <div id="aplicarArial">  
-                Ocupacion:
-                <br>
-                <select name="" id="">
-                    <option value="" >Estudiante</option>
-                    <option value="">Empleado</option>
-                    <option value="">Emprendedor</option>
-                    <option value="">Otro</option>
-                </select>
-                
-                <br>
-                <br>
-                Queres recibir mas informacion sobre SW:
-                <br>
-                SI<input type="checkbox">
-                NO<input type="checkbox">
-                <br>
-                <br>
-                Resetear:
-                <br>
-                <input type="reset" value="Resetear">
-                <br>
-                <br>
-                Enviar:
-                <br>
-                <input  type="submit" value="Enviar">
-            </div>
-        </fieldset>  
-    </form>
-    <br>
-    <br>
-    <footer class="gridFooter">
-        <h2>Datos de Contacto:</h2>
-        <h3 class="gridFooter__H31">Mail: buenosairesai@startupweekend.org</h3>
-        <h3 class="gridFooter__H32">Facebook:@swbuenosaires</h3>
-        <h3 class="gridFooter__H33">Instagram: @startupweekendba</h3>
-   </footer>
+      </header>
+    <!--Creo el nav en este punto-->  
+      <nav>
+         <ul class="menuNavegacion menuNavegacionMobileFirst colorNav">
+           <li>
+               <a href="../index.html">HOME</a>
+           </li>
+           
+           <li>
+               <a href="acercaDe.html">
+                SOBRE STARTUP WEEKEND
+               </a>
+           </li>
+           <li>
+              <a href="proximosEventos.html">
+                EVENTOS DE STARTUP WEEKEND
+              </a>
+           </li>
+            <li>
+               <a href="edicionesRealizadas.html">
+               EDICIONES REALIZADAS
+               </a>
+            </li>
+              <li>
+                  <a href="sumateAlEquipo.html">
+                    SUMATE AL EQUIPO
+                  </a>
+              </li>
+         </ul>
+      </nav>
+
+      <main>
+        <h2 class="moverFooter Mover agregoColor">Cambiemos el mundo juntos</h2>
+     
+        <div>
+            <img class="centrarImg img-fluid" src="../images/fotoEventoRealizado.jpg" alt="">
+        </div>
+       
+      </main>
+
+       <!--Agrego el Footer en este punto-->
+    <footer>  
+        <h1 class="footerHome colorMain1 Mover">Nuestras redes:</h1>
+           <span class="footerHome">
+               <a href="https://www.facebook.com/pg/swbuenosaires/community/">
+                 <img alt="Facebook Startup Weekend" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png"/>
+               </a>
+               <h5 class="colorMain1">Facebook: @swbuenosaires</h5>
+           </span> 
+           
+           <span  class="footerHome">
+             <a href="https://www.instagram.com/startupweekendba/">
+               <img src="../images/iconoIG.png" alt="Instagram de Startup Weekend">
+             </a>
+             <h5 class="colorMain1">Instagram: @startupweekendba</h5>
+           </span>
+      </footer>
+      <footer>
+       <h2 class="moverFooter colorMain1">Mail de Contacto</h2>  
+       <p class="h5 moverFooter colorMain1">
+          buenosairesecommerce@startupweekend.org
+       </p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

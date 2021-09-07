@@ -142,6 +142,124 @@
       }
   }
 
+  /**********APLICO ESTILOS A LA 4 SECCION EDICIONES REALIZADAS DE STARTUP WEEKEND************/
+  .imgGaleria{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "Area1 Area2"
+                           "Area3 Area4"
+                           "Area5 Area6";
+                            
+      width: 100%;
+
+      &__img1Gal{
+          grid-area: Area1;
+          width: 50%;
+          height: 80%;
+          justify-self: center;
+          align-self: center;
+          margin-left: 25%;
+      }
+
+      &__img2Gal{
+          grid-area: Area2;
+          width: 50%;
+          height: 80%;
+          justify-self: center;
+          align-self: center;
+          margin-right: 25%;
+      }
+      
+      &__img3Gal{
+          grid-area: Area3;
+          width: 50%;
+          height: 80%;
+        
+          margin-left: 38%;
+      }
+
+      &__img4Gal{
+         grid-area: Area4;
+         width: 50%;
+         height: 80%;
+         margin-left: 13%;
+      }
+      
+      &__img5Gal{
+          grid-area: Area5;
+          width: 50%;
+          height: 80%;
+          margin-left: 38%;
+      }
+
+      &__img6Gal{
+         grid-area: Area6;
+         width: 50%;
+         height: 80%;
+         margin-left: 13%;
+      }
+
+      img:hover{
+          border: 2px solid white;
+      }
+  }
+
+  .imgGaleria2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Area1 Area2"
+                         "Area3 Area4";
+
+    &__img1Gal2{
+        grid-area: Area1;
+        width: 50%;
+        height: 80%;
+        justify-self: center;
+        align-self: center;
+        margin-left: 25%;
+    }
+
+    &__img2Gal2{
+        grid-area: Area2;
+        width: 50%;
+        height: 80%;
+        margin-left: 13%;
+        margin-top: 5%;   
+    }
+
+    &__img3Gal2{
+        grid-area: Area3;
+        width: 50%;
+        height: 80%;
+        margin-left: 38%;
+    }
+
+    &__img4Gal2{
+        grid-area: Area4;
+        width: 50%;
+        height: 80%;
+        margin-left: 13%;  
+    }
+
+     img:hover{
+        border: 2px solid white;
+     } 
+ 
+  }
+                        
+/**********APLICO ESTILOS A LA QUINTA SECCION SUMATE EL EQUIPO*************/
+
+@mixin modificoColor($color){
+    color: $color;
+}
+
+.agregoColor{
+    @include modificoColor(white);
+}
+
+
  
     
   

@@ -100,3 +100,82 @@ p {
 
 .textoTercerSection__centrarTexto {
   text-align: center; }
+
+/**********APLICO ESTILOS A LA 4 SECCION EDICIONES REALIZADAS DE STARTUP WEEKEND************/
+.imgGaleria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Area1 Area2" "Area3 Area4" "Area5 Area6";
+  width: 100%; }
+  .imgGaleria__img1Gal {
+    grid-area: Area1;
+    width: 50%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    margin-left: 25%; }
+  .imgGaleria__img2Gal {
+    grid-area: Area2;
+    width: 50%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    margin-right: 25%; }
+  .imgGaleria__img3Gal {
+    grid-area: Area3;
+    width: 50%;
+    height: 80%;
+    margin-left: 38%; }
+  .imgGaleria__img4Gal {
+    grid-area: Area4;
+    width: 50%;
+    height: 80%;
+    margin-left: 13%; }
+  .imgGaleria__img5Gal {
+    grid-area: Area5;
+    width: 50%;
+    height: 80%;
+    margin-left: 38%; }
+  .imgGaleria__img6Gal {
+    grid-area: Area6;
+    width: 50%;
+    height: 80%;
+    margin-left: 13%; }
+  .imgGaleria img:hover {
+    border: 2px solid white; }
+
+.imgGaleria2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Area1 Area2" "Area3 Area4"; }
+  .imgGaleria2__img1Gal2 {
+    grid-area: Area1;
+    width: 50%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    margin-left: 25%; }
+  .imgGaleria2__img2Gal2 {
+    grid-area: Area2;
+    width: 50%;
+    height: 80%;
+    margin-left: 13%;
+    margin-top: 5%; }
+  .imgGaleria2__img3Gal2 {
+    grid-area: Area3;
+    width: 50%;
+    height: 80%;
+    margin-left: 38%; }
+  .imgGaleria2__img4Gal2 {
+    grid-area: Area4;
+    width: 50%;
+    height: 80%;
+    margin-left: 13%; }
+  .imgGaleria2 img:hover {
+    border: 2px solid white; }
+
+/**********APLICO ESTILOS A LA QUINTA SECCION SUMATE EL EQUIPO*************/
+.agregoColor {
+  color: white; }
