@@ -14,14 +14,13 @@
         <div class="headerImg">
             <img class="centrarImg" src="../images/logoStartupWeekend.JPEG" alt="Logo Startup Weekend Buenos Aires"> 
         </div>
-      </header>
+    </header>
     <!--Creo el nav en este punto-->  
       <nav>
          <ul class="menuNavegacion menuNavegacionMobileFirst colorNav">
            <li>
                <a href="../index.html">HOME</a>
            </li>
-           
            <li>
                <a href="acercaDe.html">
                 SOBRE STARTUP WEEKEND
@@ -37,25 +36,64 @@
                EDICIONES REALIZADAS
                </a>
             </li>
-              <li>
-                  <a href="sumateAlEquipo.html">
-                    SUMATE AL EQUIPO
-                  </a>
-              </li>
+            <li>
+               <a href="sumateAlEquipo.html">
+                  SUMATE AL EQUIPO
+               </a>
+            </li>
+            <li>
+               <a href="../ErrorHTTP404.HTML">
+                  STARTUP WEEKEND GLOBAL
+               </a>
+            </li>
          </ul>
       </nav>
-
       <main>
-        <h2 class="moverFooter Mover agregoColor">Cambiemos el mundo juntos</h2>
-     
-        <div>
-            <img class="centrarImg img-fluid" src="../images/fotoEventoRealizado.jpg" alt="">
-        </div>
-       
-      </main>
+          <h2 class="moverFooter Mover agregoColor">Cambiemos el mundo juntos</h2>
+          <div>
+              <img class="centrarImg img-fluid" src="../images/fotoEventoRealizado.jpg" alt="">
+          </div>
+          
+          <div class="container Mover">
+            <div class = "row colorMain1">
+              <p class="col-12 colorMain1">
+                ¿Te gusta cambiar la realidad de la gente? ¿Te apasiona el mundo del emprendimiento? si la respuesta es sí a ambas preguntas, entonces, 
+                te invitamos a sumarte al equipo de Startup Weekend para que juntemos logremos un ecosistema emprendedor más inclusivo.
+              </p>       
+            </div>
+          </div>
+       <!--En este punto por medio de un formulario pedimos datos de contacto a interesados en sumarse al equipo de SW-->
+         <h2 class="colorMain1 moverFooter">Dejanos tus datos</h2>
+          <div class="container">
+              <div class="row">
+                  <form class="col-6 centrarForm">
+                      <div class="mb-3">
+                        <label for="Nombre" class="form-label colorMain1">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" id="Nombre">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="Apellido" class="form-label colorMain1">Apellido</label>
+                        <input type="text" class="form-control"  placeholder="Ingrese Apellido" id="Apellido">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="emailPersonal" class="form-label colorMain1">Email</label>
+                        <input type="text" class="form-control"  placeholder="Ingrese Email" id="emailPersonal">
+                      </div>
 
+                      <p class="colorMain1">¿Quieres recibir nuestro newsletter mensual?</p>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkBox">
+                        <label class="form-check-label colorMain1" for="checkBox">Quiero recibir el newsletter</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+              </div>
+          </div>
+      </main>
        <!--Agrego el Footer en este punto-->
-    <footer>  
+    <footer class="moverFooter2">  
         <h1 class="footerHome colorMain1 Mover">Nuestras redes:</h1>
            <span class="footerHome">
                <a href="https://www.facebook.com/pg/swbuenosaires/community/">
@@ -63,7 +101,6 @@
                </a>
                <h5 class="colorMain1">Facebook: @swbuenosaires</h5>
            </span> 
-           
            <span  class="footerHome">
              <a href="https://www.instagram.com/startupweekendba/">
                <img src="../images/iconoIG.png" alt="Instagram de Startup Weekend">
@@ -72,10 +109,10 @@
            </span>
       </footer>
       <footer>
-       <h2 class="moverFooter colorMain1">Mail de Contacto</h2>  
-       <p class="h5 moverFooter colorMain1">
-          buenosairesecommerce@startupweekend.org
-       </p>
+          <h2 class="moverFooter colorMain1">Mail de Contacto</h2>  
+          <p class="h5 moverFooter colorMain1">
+              buenosairesecommerce@startupweekend.org
+          </p>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

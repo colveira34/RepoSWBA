@@ -11,7 +11,7 @@
 }
 
 .headerImg{
-    
+
     @media only screen and(min-width: 576px){
         img{
             width: 20%;
@@ -245,9 +245,8 @@
 
      img:hover{
         border: 2px solid white;
-     } 
- 
-  }
+    } 
+}
                         
 /**********APLICO ESTILOS A LA QUINTA SECCION SUMATE EL EQUIPO*************/
 
@@ -259,7 +258,15 @@
     @include modificoColor(white);
 }
 
+.centrarForm{
+    @extend .centrarImg;
+}
 
- 
-    
+.moverFooter2{
+    margin-top: 70px;
+}
+
+.ajustarBody{
+    @extend .moverFooter2;
+}
   
